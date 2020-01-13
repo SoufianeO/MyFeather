@@ -1,0 +1,52 @@
+<ion-content>
+  <div class="background-book" [style.backgroundImage]="'url(' + imagebook + ')'" > 
+          
+  </div>
+  <ion-img id="img-book" [src]="imagebook"> </ion-img>
+
+  <div class="header-book">
+  <ion-label color="dark"> 
+      <h2> {{book.nomlivre}} </h2> 
+  </ion-label>
+  <div class="profil">
+      <ion-img id="img-profil" src="../../../assets/images/profil.jpg"> </ion-img>
+      <p> Juliette434</p>
+  </div>
+  <div class="spacebetween"> 
+    <div> <div>  <ion-icon name="eye"></ion-icon> </div>  <div> {{book.nombrelectureslivre}} lectures </div></div>
+    <div> <div> <ion-icon name="chatboxes"></ion-icon> </div> <div> {{book.nombrecommentaireslivre}}  commentaires  </div>  </div>
+    <div> <div> <ion-icon name="heart"></ion-icon> </div>  <div>{{book.nombrelikeslivre}}  likes  </div></div>
+  </div>
+  </div> 
+  <div class="body-book"> 
+      <div class="reading">     
+          <ion-button  routerLink="./bookcover/">  Lire </ion-button> 
+          <ion-button>  <ion-icon name="basket"></ion-icon> </ion-button>
+      </div>
+      <h4> Résumé</h4>
+  <p>
+         {{book.resume}}
+  </p>
+      <h4> Mots clés </h4>
+      <div class="key-words"> 
+          <div *ngFor="let mot of motsCles"> {{mot}} </div>
+      </div>     
+    <div>
+        <h4> Arbre du livre  </h4>
+        <div class="center">
+        <ul class="root">
+            <li class="tree-node"><a href="#" class="node-name" id="node-book">{{book.nomlivre}}</a>
+              <ul>
+                <li *ngFor="let chapitre of chapitres" class="tree-node"> <a href="#" class="node-name"> {{chapitre.titre}} </a> </li>
+                <li *ngFor="let scenario of scenarios" class="tree-node"><a href="#" class="node-name"> {{scenario.titre}} </a>
+                    <ul>
+                      <li  *ngFor="let chapitre of scenario.tabchapitres" class="tree-node"><a href="#" class="node-name"> {{chapitre.titre}} </a></li>
+                    </ul>
+                  </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+    </div>
+  </div>
+</ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "myfeather",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

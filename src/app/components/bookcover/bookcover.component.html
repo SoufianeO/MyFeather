@@ -1,0 +1,52 @@
+<ion-content>
+
+<ion-slides pager="true" [options]="slideOpts">
+  
+  <ion-slide>
+    <ion-content>
+      <div class="background-cover-header"> 
+      </div>
+    
+      <div class="cover-header"> 
+        <h2> {{cover.titrecouverture}} </h2>
+      </div>
+      <div class="spacebetween"> 
+          <div>  <ion-icon name="eye"></ion-icon> {{cover.nombrelectures}} lectures </div>
+          <div> <ion-icon name="chatboxes"></ion-icon> {{cover.nombrecommentaires}}commentaires   </div> 
+      </div>
+    
+    <div  class="text">
+      
+      
+      <br/> 
+      {{cover.contenu}}
+      
+       </div>
+  </ion-content>
+  </ion-slide>
+
+  <ion-slide *ngFor="let chapitre of chapitres">
+    <ion-content>
+      <div class="background-cover-header"> 
+      </div>
+    
+      <div class="cover-header"> 
+        <h2> {{chapitre.titre}} </h2>
+      </div>
+      <div class="spacebetween"> 
+          <div>  <ion-icon name="eye"></ion-icon> {{chapitre.commentaires.nombre}} lectures </div>
+          <div> <ion-icon name="chatboxes"></ion-icon>  {{chapitre.lectures.nombre}}commentaires   </div> 
+      </div>
+    
+    <div  class="text">
+      
+      
+      <br/> 
+      {{chapitre.contenu}}
+      
+       </div>
+   </ion-content>
+   </ion-slide>
+  
+</ion-slides>
+</ion-content>

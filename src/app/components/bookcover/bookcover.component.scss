@@ -1,0 +1,55 @@
+ion-content{
+    --ion-backgraound-color:#EFF0F5;
+    height:100vh;
+    width:auto; 
+}
+
+.background-cover-header{
+    background:url('../../../assets/images/cover.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:40%;
+}
+
+
+.cover-header h2{
+ text-align:center;
+ font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.spacebetween{
+    display: flex;
+    justify-content: center;
+    padding:10px 10px 10px 0px;
+    text-align: center;
+    font-family:'sf';
+    font-size:large;
+    color:#869092;
+  
+}
+
+.spacebetween div{
+    margin:20px;
+}
+
+
+ion-slide{
+    height:100vh;
+  width:auto;     
+}
+
+
+
+
+.text{
+    padding:20px;
+    text-align: start;
+    line-height: 30px;
+    padding-bottom: 200px;
+}
+
+h2{
+    font-weight: bold;
+}

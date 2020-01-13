@@ -1,0 +1,25 @@
+<div class="cont">
+<div class="introduction"> 
+    <h5> Introduction </h5>
+    <div class="introduction-image">
+        <div class="rectangle">   <img [src]="image" /> </div> 
+        <div class="label-introduction-image">
+        <div> Ajouter une photo de couverture  </div>
+        <div> <ion-button (click)="addPhoto()"> <ion-icon name="add-circle-outline"></ion-icon> </ion-button> </div> </div> 
+    </div>
+    <form [formGroup]="coverForm" (ngSubmit)="submit()">
+    <div class="introduction-title">
+        
+        <ion-item>
+            <ion-input formControlName="titre"  name="titre" placeholder="Ajouter un titre de l'introduction"> </ion-input> 
+        </ion-item>
+    </div>  
+    </form>
+
+</div>
+<div class="book-intro-contenu">
+    <div class="rectangle">   <ion-button (click)="addText()"> <ion-icon name="add-circle-outline"></ion-icon> </ion-button> </div>
+    <div class="label-book-inro"> <p> Ajouter un world pour l'intro</p></div> 
+</div>
+<div class="footer-btn"><ion-button (click)="submit()"> Publier mon livre </ion-button> </div>
+</div>

@@ -1,0 +1,40 @@
+<ion-content>
+  <div class="padding">
+    <div class="logo">
+       <ion-img src="../../assets/images/logo.png"> </ion-img>
+    </div>
+
+  <form [formGroup]="signinForm" (ngSubmit)="onSubmit()">
+
+    <ion-item>
+      <ion-label color="light">Email</ion-label>
+      <ion-input color="light" placeholder="Adresse email" name="email" formControlName="email"> </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="light">Mot de passe</ion-label>
+      <ion-input color="light" placeholder="Mot de passe" type="password" formControlName="password"> </ion-input>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-button slot="end" color="light" fill="clear"> MOT DE PASSE OUBLÉ? </ion-button>
+    </ion-item>
+
+    <ion-button  expand="block" type="submit" > CONNEXION </ion-button>
+
+  </form>
+    <br/>
+    <ion-button href="/home/register" expand="block"> INSCRIPTION </ion-button>
+
+    <ion-item lines="none">
+      <ion-label text-center color="light">  Ou connectez vous avec </ion-label>
+    </ion-item>
+
+    <div class="flex">
+      <ion-button color="facebook" > <ion-icon slot="start" name="logo-facebook"></ion-icon> FACEBOOK </ion-button>
+      <ion-button color="google"> <ion-icon solot="start" name="logo-google" style="margin-right:13px;"></ion-icon>  GOOGLE </ion-button>
+    </div>
+    
+  </div>  
+  <ion-label text-center color="light">{{ errorMessage }}</ion-label>
+</ion-content>

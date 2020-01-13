@@ -1,0 +1,179 @@
+@font-face{
+    font-family: 'sf';
+    src: url('../../../assets/fonts/sf.otf');
+    font-weight:1;
+ 
+ }
+ ion-content{
+     --ion-backgraound-color:#EFF0F5;
+ }
+ 
+ .background-book{
+
+ filter:blur(10px);
+ height: 40%;
+ background-position: center center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ 
+ }
+ #img-book{
+     position: absolute;
+     left:50%;
+     margin-top:20%;
+     size:20% 20%;
+     transform: translate(-50%,-90%);
+     z-index: 2;
+ }
+ 
+ .header-book{
+     width:100%;
+     height:auto;
+     border-top:solid #E7E8EC 1px;
+     background:#EFF0F5; 
+     box-shadow: 1px 4px rgba(128, 128, 129, 0.2);  
+     
+ }
+ .header-book h2{
+     margin-top:30%;
+     text-align: center;
+     font-family:Arial;
+     font-size:25px;
+     font-weight:bold;
+     margin-bottom:20px;;
+ }
+ 
+ 
+ 
+ .spacebetween{
+     display: flex;
+     justify-content: space-between;
+     padding:10px 10px 10px 0px;
+     text-align: center;
+     font-family:'sf';
+     font-size:large;
+     color:#869092;
+     margin-top:10px;
+     
+ }
+ 
+ #img-profil{
+     margin: auto;
+     border-radius:50%;
+     height:20%;
+     width:20%;
+     overflow: hidden;
+     
+ }
+ .profil p{
+    text-align:center;
+    color: #C3C8C9;
+    font-weight:lighter;
+ }
+ .reading{
+    
+     display:flex;
+     justify-content:space-between;
+ }
+ 
+ .reading ion-button{
+     border-radius:10px;
+     background-color:linear-gradient(#3498db,#2c3e50);
+ }
+ 
+ .reading ion-button:first-child{
+     width:55%;
+ }
+ 
+ .body-book{
+     padding:20px;
+ }
+ 
+ .body-book h4{
+     font-family:Arial, Helvetica, sans-serif;
+     font-weight: bold;
+     
+ }
+ 
+ .key-words{
+     overflow-x:auto;
+     -webkit-overflow-scrolling:touch;
+     display: flex;
+ }
+ 
+ .key-words div{
+     flex: 0 0 auto;
+     background:#E5E5E5;
+     border-radius: 10px;
+     padding:10px; 
+     margin-right:10px;
+ }
+ 
+ .root {
+    list-style: none;
+    margin: 0;
+
+}
+
+.root > .tree-node::before,
+.root > .tree-node::after {
+    display: none;
+}
+
+.node-name {
+    color:black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+ul {
+    display: block;
+    list-style: none;
+    line-height: 1.3;
+    margin: 0 0 0 1rem;
+    padding-left: 0;
+}
+
+ul .tree-node {
+    display: block;
+    padding-left: 1rem;
+    position: relative;
+}
+
+/* Makes an 'L' shape before the node. */
+.tree-node::before {
+    content: '';
+    position: absolute;
+    display: block;
+    left: -0.7rem;
+    top: 0;
+    height: 0.8rem;
+    width: 1.4rem;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+/* Makes a vertical line that connects the 'L's before each node. */
+.tree-node::after {
+    content: '';
+    position: absolute;
+    display: block;
+    left: -0.7rem;  /* Must line up with li::before['left']. */
+    bottom: -0.3rem;
+    height: 100%;
+    border-left: 1px solid black;
+}
+
+/* Don't draw the vertical line after the last node.
+    It goes all the way to the bottom of the <ul> otherwise. */
+.tree-node:last-child::after {
+    display: none;
+}
+ 
+ 
+#node-book{
+    background-color:#3498db;
+    color:white;
+    border: solid #3498db ;
+}

@@ -1,0 +1,139 @@
+@font-face{
+    font-family: 'sf';
+    src: url('../../../assets/fonts/sf.otf');
+    font-weight:1;
+ }
+
+.header{
+    background-color: #3498db;
+    height:30%;
+    padding-top: 1px;
+}
+.header h5{
+    color:rgb(207, 205, 205);
+    font-weight:lighter;
+    text-align: center;
+    font-size: 15px;
+}
+.header h2{
+    color:white;
+    font-weight:bold;
+    text-align: center;
+}
+.space-between{
+    display:flex;
+    justify-content: space-between;
+    padding:10px;
+}
+
+.followings{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.followings p{
+    color: white;
+    margin : 8px 0px 0px 0px;
+    font-weight:bold;
+}
+
+.followers{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+  
+}
+
+.followers p{
+    color: white;
+    margin : 8px 0px 0px 0px;
+    font-weight:bold;
+}
+
+.img-box{
+    height: 130px;
+    width: 130px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+.border-white{
+    border:4px solid white;
+    border-radius:50%;
+    width: fit-content;
+}
+.border-blue{
+    border:8px solid  #298bcc;
+    border-radius:50%;
+    width: fit-content;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    margin-top: -20%;
+}
+
+.body{
+    padding:20px;
+}
+.card-about p{
+ font-weight: 600;
+ font-family:'sf';
+ 
+}
+
+
+
+
+
+
+.card-title{
+    margin-top:30px;
+    margin-bottom:10px;
+}
+.card-title h5{
+    font-weight: bold;
+    display: inline;
+}
+ion-card {
+	width: 46%;
+	margin: 7px;
+	height: 150px;
+}
+
+ion-slides {
+	height: 180px;
+	margin-top: 0px;
+}
+ion-slide {
+	padding: 10px;
+}
+
+
+.thumb-img {
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+.img-followers{
+    border-radius:50%;
+    height:80px;
+    width:80px;
+    border:4px solid #ffff;
+}
+
+
+.border-slim{
+    margin-left:20px;
+}
+
+.border-slim p{
+    color:rgb(145, 143, 143);
+    font-weight:lighter;
+    text-align: center;
+    font-size: 15px;
+}
+
+
+

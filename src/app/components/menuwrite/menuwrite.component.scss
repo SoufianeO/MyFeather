@@ -1,0 +1,117 @@
+.cont p{
+     font-weight:bold;
+     font-size: large;
+}
+
+.cont{
+ overflow: scroll;
+ padding:5%;
+}
+
+ion-item{
+    margin-top:5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.footer-btn{
+   margin-top:20px;
+   position: relative;
+}
+.book-image{
+    display: flex;
+
+}
+.label-book-image ion-button{
+    width:50%;
+    height:50%;
+    justify-self: center;
+}
+
+
+.book-image .rectangle{
+    background: #dbdbdb;
+    
+   
+    width:139px;
+    height:180px; 
+}
+.label-book-image{
+    margin-left: 5%;
+    display:grid;
+}
+
+.rectangle img{
+    object-fit: cover;
+    width:180px;
+    height:180px;
+
+}
+
+
+
+
+
+.book-title h5{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.key-words{
+    overflow-x:auto;
+    -webkit-overflow-scrolling:touch;
+    display: flex;
+}
+
+.key-words div{
+    flex: 0 0 auto;
+    background:#E5E5E5;
+    border-radius: 10px;
+    padding:10px; 
+    margin-right:10px;
+}
+
+ion-radio{
+   
+    color:#3498db;
+    width:30px;
+    height:30px;
+    
+    margin-left:10px;
+    margin-right: 10px; 
+
+    -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+
+}
+
+
+
+
+
+
+
+
+
+.box{
+    display: flex;
+    justify-content:space-between;  
+}
+
+
+.box-item{
+    margin-bottom:10px;
+    width:50%;
+    display: flex;
+    justify-content:stretch;  
+   
+}
+
+ion-radio-group ion-label{
+   font-weight:500;
+    
+}
+
+

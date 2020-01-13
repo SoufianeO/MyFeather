@@ -1,0 +1,27 @@
+ion-footer{
+    position: fixed;
+    bottom: 0;
+    border-top:solid #E7E8EC;
+    width: 100%;
+   
+  }
+  
+  ion-buttons{
+    display: flex;
+    justify-content:center;
+    width: 100%;
+    padding-bottom:10px;
+  }
+  
+  ion-button{
+  height:70px;
+  }
+  
+  ion-icon{
+      align-content:center;
+      margin: 20px;
+      color:#3498db;
+      height:50px;
+  }
+  
+  

@@ -1,0 +1,134 @@
+<ion-content>
+   <div class="header">
+    <h2> {{user.nom}} {{user.prenom}}</h2>
+    <h5> @{{user.username}}</h5>
+    <div class="space-between">
+      <div class="followers">
+        <p> 2</p>
+        <p>abonnés </p> 
+      </div>
+      <div class="followings"> 
+        <p > 1 </p>
+        <p>abonnements </p> 
+      </div>   
+    </div>
+   </div>
+   <div class="flex">
+    <div class="border-blue"> 
+      <div class="border-white">
+        <div class="img-box">
+          <img src="../../../assets/images/profil.jpg"/>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <div class="body">
+    <div clas="card-about"> 
+      <p>
+         {{user.about}} <br/>
+      </p>
+    </div>
+
+    <div class="card-reads"> 
+    <div class="card-title">
+          <h5> Les lectures de {{user.username}}</h5>
+    </div>
+    <ion-slides>
+      <ion-slide >
+        <img routerLink="../bookinfo"  src="../../../assets/images/1.jpg" class="thumb-img" />
+        <img src="../../../assets/images/2.jpg" class="thumb-img" />
+        <img src="../../../assets/images/3.png" class="thumb-img" />
+        <img src="../../../assets/images/4.jpg" class="thumb-img" />
+      </ion-slide>
+    </ion-slides>
+     
+    </div>
+    <div class="card-books">
+      <div class="card-title">
+        <h5> Les livres de {{user.username}}</h5>
+      </div>
+    <ion-slides>
+    
+      <ion-slide >  
+        <img src="../../../assets/images/3.png" class="trend" />      
+        <ion-card class="Trending">        
+          <ion-item >
+            <ion-icon name="md-heart" slot="start"></ion-icon>
+            <ion-label >122</ion-label>
+            <ion-icon name="md-eye" slot="end"></ion-icon>
+            <ion-label slot="end"> 122</ion-label>
+          </ion-item>
+          <ion-card-content>
+            Founded in 1829 on an isthmus between Lake Monona and Lake Mendota, 
+          </ion-card-content>  
+          </ion-card>
+      </ion-slide>
+      
+      <ion-slide >
+        <img src="../../../assets/images/5.jpg" class="trend" />
+        <ion-card class="Trending">
+          <ion-item >
+            <ion-icon name="md-heart" slot="start"></ion-icon>   
+            <ion-label >122</ion-label>      
+            <ion-icon name="md-eye" slot="end"></ion-icon>         
+            <ion-label slot="end"> 100</ion-label>      
+          </ion-item>
+          <ion-card-content>
+            Founded in 1829 on an isthmus between Lake Monona and Lake Mendota,            
+          </ion-card-content>
+          </ion-card>
+      </ion-slide>
+     
+      <ion-slide >
+        <img src="assets/images/6.jpg" class="trend" />
+        <ion-card class="Trending">     
+          <ion-item >
+            <ion-icon name="md-heart" slot="start"></ion-icon> 
+            <ion-label >122</ion-label> 
+            <ion-icon name="md-eye" slot="end"></ion-icon>
+            <ion-label slot="end"> 122</ion-label>
+          </ion-item>
+          <ion-card-content>    
+            Founded in 1829 on an isthmus between Lake Monona and Lake Mendota,      
+          </ion-card-content>   
+          </ion-card>
+      </ion-slide>
+      </ion-slides>
+  </div>
+
+
+  <div class="card-followers">
+    <div class="card-title">
+      <h5> Les abonnés de Nadabouchta</h5>
+    </div>
+    <ion-slides>
+      <ion-slide >
+        <div class="border-slim">
+        <img src="../../../assets/images/profil1.jpg" class="img-followers"  />
+        <p> @Salim33</p>
+        </div>
+     
+        <div class="border-slim">
+  
+        <img src="../../../assets/images/profil2.jpg" class="img-followers"  />
+        <p> @Sarah12 </p>
+        </div>
+
+        <div class="border-slim">
+      
+        <img src="../../../assets/images/profil3.jpg" class="img-followers" />
+        <p> @Devil222</p>
+        </div>
+      
+       
+      </ion-slide>
+    </ion-slides>
+
+  </div>
+
+  </div>
+   
+</ion-content>

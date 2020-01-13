@@ -1,0 +1,16 @@
+<ion-content>
+
+  <ng-container *ngFor="let book of categorieBooks">
+    <ion-list >
+      <ion-item >
+        <ion-thumbnail item-start>
+          <img class=" thumbnail" src={{book.image}}>
+      </ion-thumbnail>
+      <p style="margin: 10%;">{{book.nomlivre}}</p>
+     
+      <p style="color: crimson;">{{book.categorie}}</p>
+      </ion-item>
+    </ion-list>
+  </ng-container>
+
+</ion-content>

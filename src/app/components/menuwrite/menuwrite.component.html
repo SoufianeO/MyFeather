@@ -1,0 +1,77 @@
+
+
+<div class="cont"> 
+<p>  Etape 1 </p>
+<div class="book">
+    <form [formGroup]="livreForm" (ngSubmit)="submit()">
+    <div class="book-image">
+        <div class="rectangle">  <img [src]="image" /> </div>
+        <div class="label-book-image"> <ion-button (click)="addPhoto()"> <ion-icon name="add-circle-outline"></ion-icon> </ion-button>  Ajouter une photo pour le livre </div> 
+    </div>
+    <div class="book-title">
+    <ion-list>
+        
+        <ion-item>
+            <ion-input formControlName="titre"  name="titre" placeholder="Entrer un titre pour le livre " > </ion-input> 
+        </ion-item>
+        <ion-item>
+          <ion-textarea class="resume" formControlName="resume"  name="resume" placeholder="Ajouter un résumé pour le livre " > </ion-textarea> 
+      </ion-item>
+        <ion-item>
+            <ion-input formControlName="motcles" placeholder=" Ajouter un mot clé "> </ion-input> 
+            <ion-button  (click)="ajoutermotcles()" > Ajouter </ion-button> 
+            <ion-button  (click)="supprimermotcles()" > Supprimer </ion-button> 
+        </ion-item>
+        <h5> Mots clés </h5>
+      <div class="key-words" #motclesdiv> 
+      </div>  
+    </ion-list>   
+    </div>
+    
+
+    <p>Catégorie :</p>
+     
+   
+    
+ 
+    <ion-radio-group (ionChange)="RadioChangeEvent($event)" >
+    <div class="box">
+    
+         <div class="box-item">
+         <ion-radio slot="start" value="aventure" checked></ion-radio>
+          <ion-label>Aventure</ion-label>
+         
+        </div>
+        <div class="box-item">
+
+          <ion-radio slot="start"  value="romance"></ion-radio>
+          <ion-label>Romance</ion-label>
+        </div>
+
+    </div>
+    <div class="box">
+        <div class="box-item">
+         <ion-radio slot="start"   value="horreur"></ion-radio>
+         <ion-label>Horreur</ion-label>
+       
+        </div>
+        <div class="box-item">
+         
+          <ion-radio slot="start"  value="action"></ion-radio>
+          <ion-label>Action</ion-label>
+        </div>
+    </div>
+      </ion-radio-group>
+     
+              
+
+    </form>
+    <div class="footer-btn"><ion-button (click)="submit()"> Etape 2 </ion-button> </div>
+</div>
+</div>
+
+
+
+
+
+

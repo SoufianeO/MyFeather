@@ -1,0 +1,79 @@
+ion-content {
+	--ion-background-color: linear-gradient(#3498db, #2c3e50);
+}
+
+ion-item {
+	--ion-background-color: transparent !important;
+}
+
+.logo {
+	position: relative;
+	height: 250px;
+	margin-top: 7%;
+	margin-bottom: 0px;
+
+	height: 200PX;
+
+}
+
+#logo {
+	height: 220px;
+}
+
+#slogon {
+	color: white;
+
+	margin-left: 112px;
+	margin-top: 0px;
+
+	font-size: 20px;
+}
+
+.flex {
+	display: flex;
+	justify-content: space-between;
+}
+
+#fbbtn {
+	margin-left: 50px;
+}
+
+#gglbtn {
+	margin-right: 50px;
+	width: 120px;
+}
+
+hr {
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 15px;
+	width: 90%;
+}
+
+fieldset {
+	display: block;
+	margin-left: 14px;
+	margin-right: 14px;
+	padding-top: 0.35em;
+	padding-bottom: 0.625em;
+	padding-left: 0.75em;
+	padding-right: 0.75em;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin-bottom: 6%;
+}
+
+#connexion {
+	width: 90%;
+	height: 6%;
+	margin-left: 5%;
+	background-color: #DB3445;
+	margin-bottom: 6%;
+
+}
+
+a {
+	margin-left: 24%;
+	color: white;
+
+	text-decoration: none !important;
+}
